@@ -2,10 +2,12 @@
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
     color: white;
     background-color: tomato;
+    font-family: monospace;
 }
 .container {
     background-color: black;
@@ -19,18 +21,45 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+header h2 {
+    font-size: 2.5em;
+}
+header a {
+    font-size: 1.5em;
+    color: white;
+}
+header a:hover {
+    text-decoration: underline;
 }
 .logo {
     background-color: violet;
+    margin-left: 3%
 }
 .nav-bar {
     background-color: violet;
+    margin-right: 3%;
 }
 .form-1 {
     background-color: yellowgreen;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5em;
+}
+.form-1 input {
+    width: 65%;
+    text-align: center;
+}
+.form-1 button {
+    width: 25%;
+    background-color: #37af65;
+    border:none;
+    border-radius:3px;
+}
+.form-1 button:hover {
+    transform: scale(1.1);
 }
 .info-service {
     background-color: blue;
@@ -40,29 +69,68 @@ header {
 }
 .icons {
     background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 4em;
 }
 .service {
     background-color: brown;
+    display: flex;
+    flex-direction: column;
+}
+.service h2 {
+    font-size: 1.8em;
+}
+.service p {
+    font-size: 1.3em;
 }
 video {
     background-color: white;
+    width: 60%;
 }
 .suscriptions {
     background-color: cornflowerblue;
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 70%;
 }
 .suscription-1 {
     background-color: crimson;
     text-align: center;
+    width: 33%;
+}
+.suscription-1 li {
+    text-align: left;
+    font-size: 0.85em;
 }
 .suscription-2 {
     background-color: crimson;
     text-align: center;
+    width: 33%;
+}
+.suscription-2 li {
+    text-align: left;
+    font-size: 0.85em;
 }
 .suscription-3 {
     background-color: crimson;
     text-align: center;
+    width: 33%;
+}
+.suscription-3 li {
+    text-align: left;
+    font-size: 0.85em;
+}
+.suscriptions button {
+    width: 50%;
+    background-color: #37af65;
+    border:none;
+    border-radius:3px;
+}
+.suscriptions button:hover {
+    transform: scale(1.1);
 }
 .foot {
     background-color: darkblue;
@@ -70,12 +138,35 @@ video {
     flex-direction: column;
     align-items: flex-end;
     width: 90%;
+    justify-content: center;
 }
 .foot-links {
     background-color: darkred;
     width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 3px;
+}
+.foot-links a {
+    color: white;
+    font-size: 14px;
+    margin: 2px;
+    padding: 2px;    
+}
+.foot-links a:hover {
+    text-decoration: underline;
 }
 .foot-copy {
     background-color: deeppink;
     width: 30%;
+    margin: 0px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.foot-copy p {
+    font-size: 14px;
+    margin: 2px;
+    padding: 2px;  
 }
